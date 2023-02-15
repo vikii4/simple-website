@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h4{
+            text-align:center;
+            
+        }
+        body{
+            background-color:aquamarine;
+        
+        }
+        body.form{
+            border-style: solid;
+        }
+        #yy{
+            background-color:limegreen;
+            
+        }
+    </style>
+    
+</head>
+<body>
+    <form action="#" method="get" background-color="lightblue"
+    border-color="pink" autofocus="off" novalidate>
+    <br>
+    <h4 >student registration form</h4>
+    <hr color="white">
+    <br>
+    <label for="fname">Firstname:</label>
+    <input type="text"  
+    name="fname" 
+    placeholder="Firstname" 
+    id="fname"
+    size="120"
+    required 
+    maxlenght="18" minlenght="5"
+    height="3" width="20"/>
+    <br><br>
+    <label for="mname">Middlename:</label>
+    <input type="text"  
+    name="mname" 
+    placeholder="middlename" 
+    id="mname"
+    size="120"
+    required 
+    maxlenght="18" minlenght="5"
+    height="3" width="20"/>
+    <br><br>
+    <label for="lname">Lastname:</label>
+    <input type="text"  
+    name="lname" 
+    placeholder="lastname" 
+    id="lname"
+    size="120"
+    required 
+    maxlenght="18" minlenght="5"
+    height="3" width="20"/>
+    <br><br>
+    <label for="course">Course:</label>
+    <select>
+        <option id="cou" name="course">JAVA</option>
+        <option id="cou" name="course">SQL</option>
+        <option id="cou" name="course">DOT NET</option>
+        <option id="cou" name="course">ORACLE</option>
+    </select>
+    <br><br>
+    <label for="gen">Gender:</label><br>
+    <input type="radio" name="gen" id="gen" >male
+    <input type="radio" name="gen" id="gen">female
+    <input type="radio" name="gen" id="gen" checked>transgender
+    <br><br>
+    <label for="uphone">Phone:</label>
+    <br>
+    <input type="tel" name="countrycode" size="113" value="+91">
+    <br><br>
+    <input type="tel" name="uphone" id="uphone" size="113"  placeholder="phonenumber">
+    <br><br>
+    <label for="add">Current address:</label><br>
+    <textarea type="text" id="add" size="113" ></textarea><br><br>
+    <label for="mail">Email:</label><br>
+    <input type="email" placeholder="example@gmail.com" size="113"><br><br>
+    <label for="pass">Password:</label><br>
+    <input type="password" id="pass" name="pass" placeholder="password" size="113"><br><br>
+    <label for="repass">Re-type Password:</label><br>
+    <input type="password" id="repass" name="repass" placeholder="Re-type password" size="113"> <br><br>
+    <button onclick="fun()" id="yy" >Register</button>
+<p id="yyy"></p>
+
+
+    
+    
+</form>
+    <script>
+        function fun(){
+            alert("succesfully register");
+        }
+    </script>
+</body>
+</html>
